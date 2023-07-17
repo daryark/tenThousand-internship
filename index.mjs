@@ -1,7 +1,6 @@
-// import { gen, nextFn } from "./generatorFn.mjs";
-import { objForOf } from "./symbol.mjs";
+import "./symbol.mjs";
+import "./generator&Iterator.mjs";
 
-console.dir(9009);
 // Синхронний код
 // console.log("1. Синхронний код - початок");
 

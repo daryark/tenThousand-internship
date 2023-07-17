@@ -1,5 +1,6 @@
 import chalk from "chalk";
 
+console.log(chalk.inverse("        symbol.mjs       "));
 //Symbol is unique value always!
 //even if the inside value of Symbol is the same. Used in objects, mostly in initial JS methods under core.
 const sym = Symbol("foo");
@@ -35,35 +36,7 @@ user[idSymbol] = "1234 5678 9000 0001";
 console.log("Object.getOwnPropertyNames(user)", Object.getOwnPropertyNames(user));
 console.log("Object.getOwnPropertySymbols(user)", Object.getOwnPropertySymbols(user));
 
-//
-//
-//cteate custom iterator for object - for its key: prop pairs
-// const iterator = {
-//   [Symbol.iterator](){
+// exports this module to index just to see all other consoles in this module
+export default () => {};
 
-//   }
-// }
-const us = ["a", "b"];
-export function objForOf() {
-	for (let key in us) {
-		console.log(typeof key, key);
-	}
-}
-
-objForOf();
-
-// function Range(start, end) {
-// 	var ret = {};
-// 	ret[Symbol.iterator] = function* () {
-// 		while (start < end) yield start++;
-// 	};
-// 	return ret;
-// }
-
-// function logger() {
-// 	for (var x of Range(1, 4)) {
-// 		console.log(x);
-// 	}
-// }
-
-// logger();
+console.log(" ");
