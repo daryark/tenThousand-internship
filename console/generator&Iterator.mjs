@@ -81,4 +81,4 @@ for (let value of toIterable(objWithCustomIterator)) {
 //
 
 export default () => {};
-console.log(" ");
+console.log("");

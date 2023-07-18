@@ -1,5 +1,6 @@
-import "./symbol.mjs";
-import "./generator&Iterator.mjs";
+import "./console/symbol.mjs";
+import "./console/generator&Iterator.mjs";
+import "./console/operators.mjs";
 
 // Синхронний код
 // console.log("1. Синхронний код - початок");
