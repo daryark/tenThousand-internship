@@ -1,5 +1,6 @@
 import { testDeepArr } from "../testData/testDeepArr.mjs";
 import chalk from "chalk";
+import { testDeepObj } from "../testData/testDeepObj.mjs";
 
 console.log(chalk.inverse("        spreadRestDestruct.mjs       "));
 
@@ -20,7 +21,25 @@ function deepFlatCustom(arr) {
 console.log(deepFlatCustom(testDeepArr));
 
 //? desturcturization
+const { name, stats } = testDeepObj;
+// name = "Dasha"; // TypeError assignment to const
+testDeepObj.name = "Artem";
+console.log(`name: ${name}, testDeepObj.name: ${testDeepObj.name}`);
 
+stats.likes = 201;
+console.log(`stats.likes: ${stats.likes}, testDeepObj.stats.likes: ${testDeepObj.stats.likes}`);
+
+// stats.shares = "haha, no stats.shares";
+// console.log(`stats.shares: ${stats.shares}, testDeepObj.stats: ${testDeepObj.stats.shares}`);
+
+//
+//
+const {
+	shares: { users },
+} = stats;
+
+const [anna, , marco, , , newUser = "Dasha"] = users;
+console.log(`anna: ${anna}, marco: ${marco}, newUser: ${newUser}`);
 //
 //
 export default () => {};

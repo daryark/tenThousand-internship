@@ -1,3 +1,6 @@
+import { testDeepArr } from "./testDeepArr.mjs";
+import { testDeepObj } from "./testDeepObj.mjs";
+
 class SomeClass {} //fix - write class
 
 export const testData = [
@@ -28,8 +31,9 @@ export const testData = [
 			console.log("fn in arr of fn");
 		},
 	],
-	{ name: "John", age: 30 },
-	[{ name: "John", age: 30 }, { name: "John", age: 31 }, , { name: "John", age: 32 }],
+	testDeepArr,
+	testDeepObj,
+	[{ name: "John", age: 30 }, , , { name: "John", age: 31 }],
 	new Date(),
 	Symbol("mySymbol"),
 	function () {
