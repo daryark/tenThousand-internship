@@ -1,4 +1,5 @@
 export const testDeepArr = [
+	"0L",
 	[1, 2, "1L"],
 	[
 		[1, 2, 3, "2L"],

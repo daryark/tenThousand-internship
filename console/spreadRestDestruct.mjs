@@ -1,4 +1,4 @@
-import { testDeepArr } from "./testData/testDeepArr.mjs";
+import { testDeepArr } from "../testData/testDeepArr.mjs";
 import chalk from "chalk";
 
 console.log(chalk.inverse("        spreadRestDestruct.mjs       "));
@@ -19,5 +19,9 @@ function deepFlatCustom(arr) {
 
 console.log(deepFlatCustom(testDeepArr));
 
+//? desturcturization
+
+//
+//
 export default () => {};
 console.log(" ");

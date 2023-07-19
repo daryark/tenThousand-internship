@@ -1,9 +1,9 @@
-class SomeClass {} //fix write class
+class SomeClass {} //fix - write class
 
-const testData = [
+export const testData = [
 	1,
 	"string",
-	"123parceString",
+	"123parseString",
 	"with space string",
 	"123 with space and nums",
 	" spaces in start&end ",
