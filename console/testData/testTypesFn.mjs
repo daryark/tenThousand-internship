@@ -46,7 +46,7 @@ const testData = [
 	,
 ];
 
-export default function testTypesFn(callback, testData = testData) {
+export function testTypesFn(callback, testData = testData) {
 	for (const arg of testData) {
 		callback(arg);
 	}
