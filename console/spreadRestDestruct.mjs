@@ -19,8 +19,9 @@ function deepFlatCustom(arr) {
 }
 
 console.log(deepFlatCustom(testDeepArr));
+console.log("--------------------------");
 
-//? desturcturization
+//? desturcturization //?objects
 const { name, stats } = testDeepObj;
 // name = "Dasha"; // TypeError assignment to const
 testDeepObj.name = "Artem";
@@ -31,7 +32,7 @@ console.log(`stats.likes: ${stats.likes}, testDeepObj.stats.likes: ${testDeepObj
 
 // stats.shares = "haha, no stats.shares";
 // console.log(`stats.shares: ${stats.shares}, testDeepObj.stats: ${testDeepObj.stats.shares}`);
-
+console.log("--------------------------"); //?arrays
 //
 //
 const {
