@@ -2,7 +2,7 @@
 // import "./console/generator&Iterator.mjs";
 // import "./console/operators.mjs";
 // import "./console/spreadRestDestruct.mjs";
-// import "./console/delete.mjs";
-import { testSomeFunction } from "./testData/testTypesFn.mjs";
+// import "./console/deleteError.mjs";
+// import { testSomeFunction } from "./testData/testTypesFn.mjs";
 
 // testSomeFunction(parseFloat);

@@ -38,7 +38,7 @@ export const testDataChaos = [
 	testDeepObj,
 	[{ name: "John", age: 30 }, , , { name: "John", age: 31 }],
 	new Date(),
-	// Symbol("mySymbol"),
+	Symbol("mySymbol"),
 	function () {
 		console.log("This is a function.");
 	},
