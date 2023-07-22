@@ -42,7 +42,7 @@ export function useCustomError(error) {
 	const err = new CustomError({
 		message: error.message,
 		name: error.name,
-		customProperty: "customProperty data",
+		customProperty: "customError💥",
 	});
 	console.log(
 		chalk.bgRed("Error Name,Message:"),

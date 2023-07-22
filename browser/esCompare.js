@@ -8,5 +8,6 @@ console.log(globalVar); // accessible outside the IF scope
 
 // console.log(y);// Reference Error, cannot access before initialization
 // let y = 20;
-
+// console.log("--------------------------");
 export default () => {};
+console.log("");

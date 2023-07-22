@@ -38,15 +38,16 @@ export const testDataChaos = [
 	testDeepObj,
 	[{ name: "John", age: 30 }, , , { name: "John", age: 31 }],
 	new Date(),
-	Symbol("mySymbol"),
 	function () {
 		console.log("This is a function.");
 	},
 	class Extended extends SomeClass {
 		constructor({ prop, newProp }) {
 			super(prop);
+			this.newProp = newProp;
 		}
 	},
+	Symbol("mySymbol"),
 	new SomeClass({ prop: "new SomeClass" }),
 	new Map(),
 	new WeakMap(),
@@ -54,5 +55,5 @@ export const testDataChaos = [
 	new WeakSet(),
 	new Error("This is an error."),
 	,
-	,
+	new Event("look", { bubbles: true, cancelable: false }),
 ];

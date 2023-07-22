@@ -4,7 +4,7 @@ console.log(chalk.inverse("        mathOperations.mjs       "));
 
 //
 //
-//? ^ (carete) - take bites of numbers and change them, if 1^1=0 or 0^0=0; 1^0=1; 0^1=1;
+//? ^ (caret ) - take bites of numbers and change them, if 1^1=0 or 0^0=0; 1^0=1; 0^1=1;
 
 //swap variables with no additional one example
 let x = 10; //1001
