@@ -11,6 +11,7 @@ export const testDataChaos = [
 	-1,
 	3.25,
 	"3.33",
+	2e15,
 	24691357802469135780n,
 	"123parseMe",
 	"string",
