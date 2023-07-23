@@ -1,5 +1,5 @@
 console.log("-----------Set---------------");
-//? Set - is an object of the values that are unique and numbers as its keys. like an object kinda array.
+//? Set - is an object of the values that are unique and numbers as its keys. its an object kinda array.
 const set = new Set([
 	1,
 	2,

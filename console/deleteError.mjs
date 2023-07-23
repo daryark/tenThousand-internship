@@ -1,6 +1,4 @@
-import chalk from "chalk";
-
-console.log(chalk.inverse("        deleteError.mjs       "));
+console.log("        deleteError.mjs       ");
 const obj = {
 	myProp: "myProp value",
 };
@@ -25,10 +23,10 @@ console.log(obj.newProp);
 
 // console.log(delete obj.newProp); //TypeError
 
-//fix: try with super obj on proto then:
 // ReferenceError
 // Thrown if object is super.
 console.log("-----------------------");
+
 //? Error
 export class CustomError extends Error {
 	constructor({ message, name, customProperty }) {
@@ -44,10 +42,7 @@ export function useCustomError(error) {
 		name: error.name,
 		customProperty: "customError💥",
 	});
-	console.log(
-		chalk.bgRed("Error Name,Message:"),
-		`${err.name}, ${err.message}, ${err.customProperty}`
-	);
+	console.log("Error Name,Message:", `${err.name}, ${err.message}, ${err.customProperty}`);
 }
 
 console.log(" ");

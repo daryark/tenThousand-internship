@@ -8,11 +8,10 @@ class SomeClass {
 }
 
 export const testDataChaos = [
-	1,
+	-1,
 	3.25,
 	"3.33",
 	24691357802469135780n,
-	BigInt(1234567890n),
 	"123parseMe",
 	"string",
 	"with space string",
