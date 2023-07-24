@@ -7,13 +7,14 @@ import { testDeepObj } from "./testDeepObj.mjs";
 //method - value.includes('blabla')
 //object.method - Math.floor('value');
 
-//opt - optional data to pass into callback
+//opt - optional data to pass into callback as an array!!! of options
 
 export default function testSomeFunction(callback, type, opt = "") {
 	if (!type) useCustomError({ message: "passed not valid arguments", name: TypeError.name });
 
 	for (const argument of testDataChaos) {
 		let result;
+
 		try {
 			switch (type) {
 				case "function":
@@ -21,12 +22,12 @@ export default function testSomeFunction(callback, type, opt = "") {
 					break;
 
 				case "method":
-					result = argument.callback(opt.length > 0 ? opt : "");
+					result = argument[callback](...opt);
 					break;
 
 				case "object.method":
 					const { object, method } = callback;
-					result = object[method](argument);
+					result = object[method](argument, ...opt);
 					break;
 
 				// case "chain":

@@ -79,5 +79,5 @@ function toNumber(n, code) {
 
 // console.log(parseInt(-24e3));
 // console.log(myParseInt(-24e3));
-console.log(myParseInt(-8.89));
+// console.log(myParseInt(-8.89));
 testSomeFunction(myParseInt, "function");
