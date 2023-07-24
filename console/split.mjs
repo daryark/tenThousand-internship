@@ -10,7 +10,7 @@ String.prototype.mySplit = function (delimiter = "", limit = Infinity) {
 	let del = "";
 	let sub = "";
 
-	if (typeof this !== "string") throw new TypeError(`${this} is not a function`);
+	// if (typeof this !== "string") throw new TypeError(`${this} is not a function`);
 	if (!this.length) return [""];
 
 	if (delimiter === "") {
@@ -59,4 +59,4 @@ String.prototype.mySplit = function (delimiter = "", limit = Infinity) {
 // "my string".split("my string");
 // console.log("4, 4, 4, 4".mySplit(", ", 2));
 // console.log("with space string".mySplit("parse"));
-// testSomeFunction("mySplit", "method", ["123parseMe"]);
+testSomeFunction("mySplit", "method", ["123parseMe"]);
