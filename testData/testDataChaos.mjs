@@ -10,7 +10,7 @@ class SomeClass {
 export const testDataChaos = [
 	-1,
 	3.25,
-	"3.33",
+	"-3.33",
 	24691357802469135780n,
 	"123parseMe",
 	"string",
@@ -56,5 +56,7 @@ export const testDataChaos = [
 	,
 	new Event("look", { bubbles: true, cancelable: false }),
 	2e15,
+	BigInt(1),
 	[, , , ,],
+	0 / 0,
 ];

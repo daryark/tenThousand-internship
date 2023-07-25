@@ -1,6 +1,4 @@
-import chalk from "chalk";
-
-console.log(chalk.inverse("        mathOperations.mjs       "));
+console.log("        mathOperations.mjs       ");
 
 //
 //

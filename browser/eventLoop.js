@@ -2,7 +2,7 @@
 //
 //
 // Синхронний код
-// console.log("1. Синхронний код - початок");
+console.log("1. Синхронний код - початок");
 
 // Генератор
 // function* generatorExample() {
@@ -72,25 +72,25 @@
 //
 // //? Event loop
 
-// function async1() {
-// 	console.log("async1 start");
-// 	async2().then(() => {
-// 		console.log("async1 end");
-// 	});
-// }
+function async1() {
+	console.log("async1 start");
+	async2().then(() => {
+		console.log("async1 end");
+	});
+}
 
-// function async2() {
-// 	return new Promise((resolve) => {
-// 		resolve();
-// 		console.log("async2");
-// 	});
-// }
+function async2() {
+	return new Promise((resolve) => {
+		resolve();
+		console.log("async2");
+	});
+}
 
-// function* generate() {
-// 	console.log("generate-1");
-// 	yield;
-// 	console.log("generate-1.2");
-// }
+function* generate() {
+	console.log("generate-1");
+	yield;
+	console.log("generate-1.2");
+}
 
 // function* generate2() {
 // 	console.log("generate-2");
@@ -100,12 +100,20 @@
 
 // console.log("script start");
 
-// setTimeout(function () {
-// 	console.log("setTimeout");
-// }, 0);
+setTimeout(function () {
+	console.log("setTimeout");
+}, 0);
 
-// const generator1 = generate();
-// generator1.next();
-// generator1.next();
+const generator1 = generate();
+generator1.next();
+generator1.next();
 
-// async1();
+async1();
+
+// setImmediate(() => {
+// 	console.log("4. setImmediate - зворотний виклик");
+// });
+
+queueMicrotask(() => {
+	console.log("queueMicrotask done");
+});

@@ -1,6 +1,4 @@
-import chalk from "chalk";
-
-console.log(chalk.inverse("        loops.mjs       "));
+console.log("        loops.mjs       ");
 
 function loopFor() {
 	for (

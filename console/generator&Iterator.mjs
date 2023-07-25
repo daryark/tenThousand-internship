@@ -1,6 +1,4 @@
-import chalk from "chalk";
-
-console.log(chalk.inverse("        generator&Iterator.mjs       "));
+console.log(e("        generator&Iterator.mjs       "));
 
 //?generator functions
 export function* gen(n = 4) {
@@ -38,7 +36,7 @@ objForOf();
 //
 //? custom generator - [Symbol.iterator]
 function toIterable(obj) {
-	console.log(chalk.bgCyan(" toIterable function "));
+	console.log(" toIterable function ");
 	return {
 		...obj,
 		[Symbol.iterator]() {

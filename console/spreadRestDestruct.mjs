@@ -1,8 +1,7 @@
 import { testDeepArr } from "../testData/testDeepArr.mjs";
-import chalk from "chalk";
 import { testDeepObj } from "../testData/testDeepObj.mjs";
 
-console.log(chalk.inverse("        spreadRestDestruct.mjs       "));
+console.log("        spreadRestDestruct.mjs       ");
 
 //refactor: res outside the func is ok? not ok?/ do it as a class /object with method/ just take into scope {} ...?
 let res = [];

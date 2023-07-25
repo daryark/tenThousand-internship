@@ -1,9 +1,12 @@
-console.log("        deleteError.mjs       ");
+// console.log("        deleteError.mjs       ");
+//-y delete can only delete props in object, not the whole obj. And only if these props are configurable: true
+//returns boolean whether the prop was deleted
+//can delete either own, or inherited from prototype props
 const obj = {
 	myProp: "myProp value",
 };
 
-console.log(Object.keys(obj));
+// console.log(Object.keys(obj));
 Object.defineProperty(obj, "myProp", {
 	configurable: false,
 });
@@ -14,18 +17,18 @@ Object.defineProperty(obj, "newProp", {
 	// configurable: true,
 	configurable: false,
 });
-console.log(
-	Object.keys(obj),
-	"myProp still seen after configurable: false, but new Prop is not seen, though configurable: true"
-);
+// console.log(
+// 	Object.keys(obj),
+// 	"myProp still seen after configurable: false, but new Prop is not seen, though configurable: true"
+// );
 obj.newProp = "new value";
-console.log(obj.newProp);
+// console.log(obj.newProp);
 
 // console.log(delete obj.newProp); //TypeError
 
 // ReferenceError
 // Thrown if object is super.
-console.log("-----------------------");
+// console.log("-----------------------");
 
 //? Error
 export class CustomError extends Error {
