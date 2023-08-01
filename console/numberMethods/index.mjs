@@ -1,5 +1,5 @@
 import testSomeFunction from "../../testData/testSomeFunction.mjs";
-
+// testSomeFunction("valueOf", "method");
 // console.log(0 || 1);
 // console.log(undefined || 0);
 // console.log(null || 0);
