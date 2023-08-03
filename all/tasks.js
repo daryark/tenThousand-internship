@@ -67,37 +67,34 @@ function getNumberFromStr(str) {
 // }
 const text2 =
 	"I paid 750 USDT for plane tickets and 921 USDT for a flat. My wallet balance is 14690 USDT.";
-
+// const text2 = "45400";
 getNumberFromStrReverse(text2);
 
 function getNumberFromStrReverse(str) {
 	const zero = "0".charCodeAt();
-	const min = 48;
-	const max = 57;
+	const nine = "9".charCodeAt();
 
 	let num = 0;
-	let currentNum = null;
+	let power = 1;
+	let balance = 0;
 
 	for (let i = str.length - 1; i >= 0; i -= 1) {
 		const codeI = str[i].charCodeAt();
 
-		if (codeI >= min && codeI <= max) {
-			if (currentNum === 0) {
-				currentNum = (codeI - zero) * 10;
-			} else if (currentNum === null) {
-				currentNum = codeI - zero;
-			} else {
-				currentNum += (codeI - zero) * 10 ** `${currentNum}`.length;
-				console.log(currentNum);
+		if (codeI >= zero && codeI <= nine) {
+			const digit = codeI - zero;
+			if (digit) {
+				num += digit * power;
 			}
-		} else {
-			if (!num) {
-				num += currentNum;
-			} else {
-				num -= currentNum;
-			}
-			currentNum = null;
+			power *= 10;
+			continue;
+		}
+		if (num) {
+			balance = balance ? balance - num : num;
+			num = 0;
+			power = 1;
+			continue;
 		}
 	}
-	console.log(num);
+	console.log(balance);
 }

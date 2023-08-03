@@ -3,10 +3,12 @@
 		"Artem",
 		"Balu",
 		"blabla",
+		"charcodes",
 		"convertations",
 		"desturcturization",
 		"evrth",
 		"haha",
 		"usecases"
-	]
+	],
+	"liveServer.settings.port": 5501
 }
