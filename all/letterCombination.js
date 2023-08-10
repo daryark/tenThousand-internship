@@ -32,3 +32,6 @@ function iterateDigit(digits, args = { current: "", i: 0 }) {
 }
 
 console.log(letterCombinations("234"));
+
+//refactor: solve this task with only for and while and no methods.
+//!!!!!!!!!!!!!!!!!!!!!!
